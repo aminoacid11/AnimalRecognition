@@ -4,6 +4,7 @@ This is an animal recognition application that predicts whether the animal in a 
 In order to train the model, the dataset from kaggle was used. <br />
 Here is the link: <br />
 Animal faces: https://www.kaggle.com/andrewmvd/animal-faces <br />
+![Example image of this web application](app_screenshot.png) <br />
 
 For the model training, the pre-trained model of VGG16 was used for the classification of different animals. Instead of classifying 1000 categories which was originally trained, only 3 categories were choosed for classification: <br />
 Cat, Dog, and Wild animal. <br />
@@ -26,5 +27,4 @@ After starting this application, click on "Choose Image" button to upload photos
 Click on "Delete selected image" to delete images that you selected from the screen. <br />
 Click on "Start" button to predict the classes of the animals in the uploaded photos. This process might take few seconds.<br />
 Click on "Clear All" button to clear all the texts and informations on the screen. <br />
-Click on "Close" button the finish the application. <br />
-![Example image of this web application](app_screenshot.png)
+Click on "Close" button the finish the application.
