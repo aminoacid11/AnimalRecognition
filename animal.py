@@ -12,15 +12,15 @@ root.configure(bg='#3b5998')
 
 # Find prediction
 def pred_photo():
-    if os.path.isdir('images') is False:
-        os.makedirs('images')
-        os.makedirs('images/cat')
-        os.makedirs('images/dog')
-        os.makedirs('images/wild')
-    pred_path = 'images'
+    if os.path.isdir('images/predict') is False:
+        os.makedirs('images/predict')
+        os.makedirs('images/predict/cat')
+        os.makedirs('images/predict/dog')
+        os.makedirs('images/predict/wild')
+    pred_path = 'images/predict'
     for index,x in enumerate(list_file.get(0,END)):
         image = Image.open(x)
-        temp_path = 'images/cat'
+        temp_path = 'images/predict/cat'
         predict_path = os.path.join(temp_path, '{}.jpg'.format(index))
         image.save(predict_path)
     pred_batches= ImageDataGenerator(preprocessing_function=tf.keras.applications.vgg16.preprocess_input) \
