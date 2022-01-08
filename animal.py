@@ -12,7 +12,8 @@ root.configure(bg='#3b5998')
 
 # Find prediction
 def pred_photo():
-    if os.path.isdir('images/predict') is False:
+    if os.path.isdir('images') is False:
+        os.makedirs('images')
         os.makedirs('images/predict')
         os.makedirs('images/predict/cat')
         os.makedirs('images/predict/dog')
@@ -71,7 +72,7 @@ def start():
 # Photo frame
 photo_frame = Frame(root,bg='#3b5998')
 photo_frame.pack(fill='x', padx=5, pady=5)
-btn_photo_add = Button(photo_frame, padx=5, pady=5, width=12, text="Insert photo", command=add_photo)
+btn_photo_add = Button(photo_frame, padx=5, pady=5, width=12, text="Choose photo", command=add_photo)
 btn_photo_add.pack(side='left')
 btn_photo_clear = Button(photo_frame, padx=5, pady=5, width=12, text="Clear All", command=clear_all)
 btn_photo_clear.pack(side='right')
