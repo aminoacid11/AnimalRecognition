@@ -1,10 +1,11 @@
 # Animal Recognition
 
 This is an animal recognition application that predicts whether the animal in a given photo is a cat, dog, or a wild animal. <br />
+![Example image of this web application](app_screenshot.png) <br />
+
 In order to train the model, the dataset from kaggle was used. <br />
 Here is the link: <br />
 Animal faces: https://www.kaggle.com/andrewmvd/animal-faces <br />
-![Example image of this web application](app_screenshot.png) <br />
 
 For the model training, the pre-trained model of VGG16 was used for the classification of different animals. Instead of classifying 1000 categories which was originally trained, only 3 categories were choosed for classification: <br />
 Cat, Dog, and Wild animal. <br />
