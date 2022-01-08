@@ -1,4 +1,4 @@
-# AnimalRecognition
+# Animal Recognition
 
 This is an animal recognition application that predicts whether the animal in a given photo is a cat, dog, or a wild animal. <br />
 In order to train the model, the dataset from kaggle was used. <br />
