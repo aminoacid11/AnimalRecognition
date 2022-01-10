@@ -11,7 +11,7 @@ Animal faces: https://www.kaggle.com/andrewmvd/animal-faces <br />
 For the model training, the pre-trained model of VGG16 was used for the classification of different animals. Instead of classifying 1000 categories which was originally trained, only 3 categories were choosed for classification: <br />
 - Cat <br />
 - Dog <br />
-- Wild animal. <br />
+- Wild animal <br />
 
 Fine tuning with Tensorflow's Keras API was used on this pre-trained model to build a neural network for the specified classification. As the original VGG16 model trained on cat and dog classes, after training this model to newly categorized classes with epochs of 5, the validation accuracy went up to 99.56% for classifying numeous given images to these 3 classes. <br />
 
