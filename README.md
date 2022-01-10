@@ -10,6 +10,7 @@ Animal faces: https://www.kaggle.com/andrewmvd/animal-faces <br />
 
 For the model training, the pre-trained model of VGG16 was used for the classification of different animals. Instead of classifying 1000 categories which was originally trained, only 3 categories were choosed for classification: <br />
 - Cat, Dog, and Wild animal. <br />
+
 Fine tuning with Tensorflow's Keras API was used on this pre-trained model to build a neural network for the specified classification. As the original VGG16 model trained on cat and dog classes, after training this model to newly categorized classes with epochs of 5, the validation accuracy went up to 99.56% for classifying numeous given images to these 3 classes. <br />
 
 ## File informations: <br />
@@ -26,7 +27,7 @@ To start the web application, run:
 1. First, unzip the "zip_images.zip" folder. <br />
 2. Run the "train_model.py" codes to train, validate, and generate the model to use for the prediction. <br />
 3. Start the application, and click on "Choose Image" button to upload photos that you want the application to predict. <br />
-- Click on "Delete selected image" to delete images that you selected from the screen. <br />
-- Click on "Start" button to predict the classes of the animals in the uploaded photos. This process might take few seconds.<br />
-- Click on "Clear All" button to clear all the texts and informations on the screen. <br />
-- Click on "Close" button the finish the application.
+	- Click on "Delete selected image" to delete images that you selected from the screen. <br />
+	- Click on "Start" button to predict the classes of the animals in the uploaded photos. This process might take few seconds.<br />
+	- Click on "Clear All" button to clear all the texts and informations on the screen. <br />
+	- Click on "Close" button the finish the application.
