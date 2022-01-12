@@ -20,7 +20,7 @@ def input_picture(size):
         temp_img = temp_img.resize((size,size), Image.ANTIALIAS)
         img = ImageTk.PhotoImage(temp_img)
         temp_list.append(img)       
-    panel.config(image=temp_list[0])
+    panel.config(image=temp_list[-1])
     panel.pack(side = LEFT, fill = "both", expand = "yes")
 # View selected image command
 def view():
